@@ -24,7 +24,8 @@ class Leader(Node):
         self.next_index = 1
 
         # 日志记录紧跟nextIndex的上一个索引
-        self.prev_index = -1
+        self.prev_index = len(node.log)-1
+        print(len(node.log))
         # 日志记录紧跟nextIndex的上一个term值和日志记录
         if self.prev_index == -1:
             self.prev_term = 0
