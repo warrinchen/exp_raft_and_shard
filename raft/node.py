@@ -28,7 +28,6 @@ class Node:
         self.vote_for = None
 
         # 设置socket消息的本机地址和端口
-        # self.rpc = Rpc((node.ip, node.port))
         self.rpc = node.rpc
         # 组中的其他节点
         self.followers = node.followers
